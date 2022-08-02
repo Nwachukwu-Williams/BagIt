@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;1,100&display=swap');
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section,
+nav,
+header {
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+nav {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 99;
+}
+
+.active a {
+    font-weight: bold;
+    text-decoration: #FFB703 underline .2em;
+    text-underline-offset: 1px;
+}
+
+nav button:first-child {
+    padding: 3px 15px;
+    background: rgba(255, 228, 146, 1);
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+}
+
+nav ul {
+    width: 522px;
+    padding: 0%;
+    margin: 0%;
+}
+
+nav ul,
+nav li,
+nav a {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+    align-items: center;
+}
+
+nav li a:hover {
+    font-weight: bold;
+    font-size: .95rem;
+}
+
+nav div:last-child {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    background: rgba(217, 217, 217, 1);
+    border-radius: 100px;
+    align-items: center;
+    height: 49px;
+    padding: 0% 4px 0% 11px;
+}
+
+nav p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+nav div button {
+    background: #FFE492;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+}
+
+nav button:last-child {
+    padding-top: 4px;
+}
+
+header {
+    padding-top: calc(191px - 15px);
+    padding-bottom: 225px;
+    position: relative;
+    border-radius: 40px;
+    background-image: url(/images/Untitled-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3.9em;
+    line-height: 87.67px;
+    height: 176px;
+    position: relative;
+    z-index: 3;
+}
+
+h1 span {
+    color: rgba(255, 183, 3, 1);
+}
+
+header button {
+    font-family: 'Mplus 1p Bold', sans-serif;
+    padding: 12px 0px;
+    background: rgba(255, 183, 3, 1);
+    border: none;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    width: 373px;
+    height: 60px;
+}
+
+header img {
+    position: absolute;
+    width: fit-content;
+    height: 417px;
+    right: 18%;
+    top: 101px;
+    border-radius: 40px;
+    transition-duration: 200ms;
+}
+
+header img:hover {
+    transform: scale(1.05);
+}
+
+header>svg {
+    position: absolute;
+    top: 0px;
+    right: 12%;
+}
+
+.svgs svg {
+    transition-duration: 200ms;
+}
+
+.svgs svg:hover:nth-child(even) {
+    transform: scale(1.05);
+}
+
+.svgs svg:hover:nth-child(odd) {
+    transform: scale(1.1);
+}
+
+.svgs svg:first-child {
+    position: absolute;
+    right: 18%;
+    top: 433px;
+    z-index: +2;
+}
+
+.svgs svg:nth-child(2) {
+    position: absolute;
+    right: 33%;
+    top: 400px;
+    z-index: 2;
+}
+
+.svgs svg:nth-child(3) {
+    position: absolute;
+    right: 41%;
+    top: 266px;
+}
+
+.svgs svg:nth-child(4) {
+    position: absolute;
+    right: 38.5%;
+    top: 500px;
+}
+
+.svgs svg:nth-child(5) {
+    position: absolute;
+    right: 33.5%;
+    top: 155px;
+}
+
+.svgs svg:nth-child(6) {
+    position: absolute;
+    right: 20%;
+    top: 173px;
+}
+
+.svgs svg:nth-child(7) {
+    position: absolute;
+    right: 18%;
+    top: 328px;
+}
+
+.search,
+.search>div,
+.search ul,
+.search li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.search {
+    gap: 1%;
+    position: sticky;
+    top: 81px;
+}
+
+.search ul {
+    width: 598px;
+    height: 42px;
+    padding: 0% 10px;
+    margin: 0%;
+    background: #FFF5D8;
+    border-radius: 25px;
+}
+
+.search li {
+    cursor: pointer;
+    position: relative;
+}
+
+.search li:hover {
+    height: 42px;
+}
+
+.search>div {
+    position: relative;
+    gap: 10px;
+    background: #D9D9D9;
+    border-radius: 25px;
+    padding-left: 25px;
+    padding-right: 4px;
+    width: 690px;
+    height: 50px;
+}
+
+.search input {
+    width: 90%;
+    padding: 11px calc(55px + 16px) 11px 15px;
+    background: #FFF5D8;
+    border-radius: 25.5px;
+    border: none;
+    font-size: 16px;
+}
+
+.search ::placeholder {
+    font-style: italic;
+}
+
+#search-button {
+    position: absolute;
+    padding-top: 8px;
+    height: 34px;
+    width: 55px;
+    right: 8px;
+    top: 8px;
+    border: none;
+    border-radius: 18px;
+    background: rgba(255, 183, 3, 0.75);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.dropbtn {
+    background: #FFF5D8;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #f9f9f9;
+    width: max-content;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover {
+    background-color: #3e8e41;
+}
+
+h3 {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+    background: #FFF5D8;
+    padding-top: 40px;
+    margin-top: 200px;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12%;
+    padding-right: 12%;
+    height: calc(216.38px + 22px);
+}
+
+footer ul,
+footer li,
+footer a {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 16px;
+}
+
+footer div:last-child {
+    height: 111px;
+    background: #FFE492;
+}

@@ -1,0 +1,18 @@
+/*
+The CSS export should solely be used as a reference.
+For a more detailed animation export the JSON file should be used.
+*/
+#Group_54 {
+    transform: translateX(-50%) translateY(-50%);
+    animation: Group_54__rotation__1 4000ms 0ms linear forwards;
+}
+
+@keyframes Group_54__rotation__1 {
+    from {
+        transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+
+    to {
+        transform: translateX(-50%) translateY(-50%) rotate(-719deg);
+    }
+}
