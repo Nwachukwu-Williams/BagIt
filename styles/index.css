@@ -1,107 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;1,100&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0%;
     padding: 0%;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #F4F4F4;
 }
 
 section,
 nav,
-header {
-    padding-left: 12%;
-    padding-right: 12%;
-}
-
-nav {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    display: flex;
-    justify-content: space-between;
-    position: sticky;
-    top: 0px;
-    background-color: white;
-    z-index: 99;
-}
-
-.active a {
-    font-weight: bold;
-    text-decoration: #FFB703 underline .2em;
-    text-underline-offset: 1px;
-}
-
-nav button:first-child {
-    padding: 3px 15px;
-    background: rgba(255, 228, 146, 1);
-    font-size: 24px;
-    font-weight: bold;
-    border: none;
-    border-radius: 30px;
-}
-
-nav ul {
-    width: 522px;
-    padding: 0%;
-    margin: 0%;
-}
-
-nav ul,
-nav li,
-nav a {
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    text-decoration: none;
-    list-style-type: none;
-    font-weight: 400;
-    font-size: 1rem;
-    font-style: normal;
-    align-items: center;
-}
-
-nav li a:hover {
-    font-weight: bold;
-    font-size: .95rem;
-}
-
-nav div:last-child {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    background: rgba(217, 217, 217, 1);
-    border-radius: 100px;
-    align-items: center;
-    height: 49px;
-    padding: 0% 4px 0% 11px;
-}
-
-nav p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-}
-
-nav div button {
-    background: #FFE492;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    border: none;
-}
-
-nav button:last-child {
-    padding-top: 4px;
-}
-
-header {
-    padding-top: calc(191px - 15px);
-    padding-bottom: 225px;
-    position: relative;
-    border-radius: 40px;
-    background-image: url(/images/Untitled-1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 10px;
+header,
+footer {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 h1 {
@@ -114,7 +29,137 @@ h1 {
 }
 
 h1 span {
-    color: rgba(255, 183, 3, 1);
+    color: #FFB703;
+}
+
+h2 {
+    font-family: 'Mplus 1p Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #000000;
+}
+
+h2 span {
+    color: #FFB703;
+}
+
+h3 {
+    font-family: 'Mplus 1p Bold', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+}
+
+h3 span {
+    color: #FFB703;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    position: sticky;
+    top: 0%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+nav button:first-child {
+    padding: 12px 30px;
+    background: rgba(255, 228, 146, 1);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    align-content: center;
+}
+
+nav li,
+nav a {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+    align-items: center;
+}
+
+nav ul a {
+    padding: 10px;
+}
+
+nav li a:hover {
+    font-weight: bold;
+    font-size: .95rem;
+}
+
+nav .active a {
+    font-weight: bold;
+    text-decoration: #FFB703 underline .2em;
+    text-underline-offset: 5px;
+}
+
+nav>div:last-of-type {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background: rgba(217, 217, 217, 1);
+    border-radius: 100px;
+    align-items: center;
+    padding: 4px 4px 4px 11px;
+}
+
+nav div p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav div button:first-of-type {
+    background-color: #FFF5D8;
+    border-radius: 100%;
+    border: none;
+    padding: 16.12px 15px 16.12px 11.62px;
+}
+
+nav div button:last-of-type {
+    background-color: #FFF5D8;
+    border-radius: 100%;
+    border: none;
+    padding: 12.12px 11px 8.88px 11px;
+}
+
+header {
+    padding-top: calc(191px - 15px);
+    padding-bottom: 225px;
+    position: relative;
+    border-radius: 40px;
+    background-image: url(/images/Untitled-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10px;
 }
 
 header button {
@@ -324,41 +369,67 @@ header>svg {
     background-color: #3e8e41;
 }
 
-h3 {
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
 footer {
     position: relative;
     bottom: 0px;
     background: #FFF5D8;
     padding-top: 40px;
-    margin-top: 200px;
+    padding-bottom: 40px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
 }
 
 footer div {
     display: flex;
-    justify-content: space-between;
-    padding-left: 12%;
-    padding-right: 12%;
-    height: calc(216.38px + 22px);
+    gap: 15px;
+    flex-direction: column;
 }
 
 footer ul,
 footer li,
 footer a {
     color: black;
-    list-style: none;
+    list-style-type: none;
     text-decoration: none;
-    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Mplus 1p', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
 }
 
-footer div:last-child {
-    height: 111px;
+footer input,
+footer textarea {
+    padding: 5px 15px;
+    background: #FFFFFF;
+    border: none;
+    border-left: 5px solid #FFB703;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+footer button {
+    padding: 8px 35px;
+    width: fit-content;
+    border: none;
+    background-color: #FFB703;
+    font-family: 'Mplus 1p Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 100px;
+}
+
+footer div:last-of-type {
+    height: 50px;
+    width: 100%;
     background: #FFE492;
+    position: absolute;
+    top: 100%;
+    left: 0%;
 }
