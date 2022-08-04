@@ -1,0 +1,80 @@
+section {
+    margin-top: 115px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+section form {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+
+section form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-family: 'Mplus 1p Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+}
+
+section input,
+section textarea {
+    border-radius: 15px;
+    padding: 20px 45px;
+    box-sizing: border-box;
+    background: #e1e1e1;
+    border: none;
+}
+
+section input ::placeholder,
+section textarea ::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #C0C0C0;
+}
+
+section input[type=button] {
+    background: #FFF5D8;
+    border-radius: 15px;
+    font-family: 'Mplus 1p Bold', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: #212121;
+    text-align: left;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+section input[type=button]:hover {
+    background-color: #CCC4AD;
+}
+
+section input[type=submit] {
+    background: #FFB703;
+    align-self: center;
+    padding: 15px 65px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+section input[type=submit]:hover {
+    background-color: #CC9202;
+}
+
+section form>div:last-of-type {
+    gap: 15px;
+}
