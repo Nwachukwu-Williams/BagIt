@@ -1,0 +1,239 @@
+body {
+    background-color: #F4F4F4;
+}
+
+section {
+    margin-top: 16px;
+    display: flex;
+    gap: 16px;
+}
+
+section>div:first-of-type {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+section>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.product>div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product>div>img {
+    max-height: 100%;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.product .images {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    overflow-x: auto;
+    align-items: center;
+    max-width: 400px;
+}
+
+.product .images img {
+    max-height: 100%;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.product .images svg {
+    max-width: fit-content;
+    height: 40px;
+}
+
+.product p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+    color: #000000;
+}
+
+.product .description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: fit-content;
+    background: #ededed;
+    border-left: 7px solid #FFB703;
+    padding: 20px;
+}
+
+.product table {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 16px;
+}
+
+.product td,
+.product th {
+    padding: 5px;
+    width: 150px;
+}
+
+.product tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.you_may_like,
+.recent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.you_may_like>div,
+.recent>div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 20px;
+}
+
+.you_may_like .item,
+.recent .item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: fit-content;
+}
+
+.you_may_like .item>div,
+.recent .item>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.you_may_like .item div button,
+.recent .item div button {
+    padding: 5px 5px;
+    border-radius: 50%;
+    border: none;
+    background-color: #FFF5D8;
+}
+
+.you_may_like .item>button,
+.recent .item>button {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    width: auto;
+    background-color: #FFB703;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.prices {
+    position: relative;
+}
+
+.prices>div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 10px;
+    position: sticky;
+    top: 89.98px;
+    z-index: 10;
+}
+
+.amount {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.amount p:first-of-type {
+    text-decoration: line-through;
+}
+
+.amount p:last-of-type {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.prices .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+.options button:first-of-type {
+    flex: 1;
+    background-color: inherit;
+    box-sizing: border-box;
+    border: 3px solid #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 141.4%;
+    text-align: center;
+    color: #000000;
+    padding: 14px 53px;
+}
+
+.options button:last-of-type {
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background: #D9D9D9;
+}
+
+.prices>div>div>button {
+    background-color: #FFB703;
+    padding: 15px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 141.4%;
+    text-align: center;
+    color: #000000;
+}
+
+.discount {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding: 20px 10px;
+    background-color: #FFE492;
+}

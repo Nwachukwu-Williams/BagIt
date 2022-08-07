@@ -50,7 +50,7 @@ h2 span {
 
 h3 {
     font-family: 'Mplus 1p Bold', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 22px;
     text-align: left;
@@ -152,6 +152,36 @@ nav div button:last-of-type {
     border-radius: 100%;
     border: none;
     padding: 12.12px 11px 8.88px 11px;
+}
+
+nav li {
+    background: linear-gradient(0deg, #FFB703, #FFB703) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+    padding: 5px;
+    --bg-h: 2px;
+    box-sizing: border-box;
+}
+
+nav li:where(:hover,
+ :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+}
+
+.view_more {
+    padding: 15px 100px;
+    width: fit-content;
+    border-radius: 100px;
+    border: none;
+    background-color: #FFB703;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Mplus 1p Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 50px;
 }
 
 header {
