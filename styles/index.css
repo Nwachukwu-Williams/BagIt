@@ -41,7 +41,7 @@ h2 {
     font-weight: 700;
     font-size: 32px;
     line-height: 48px;
-    color: #000000;
+    color: #111B57;
 }
 
 h2 span {
@@ -54,10 +54,20 @@ h3 {
     font-weight: 700;
     line-height: 22px;
     text-align: left;
+    color: #111B57;
 }
 
 h3 span {
     color: #FFB703;
+}
+
+h4 {
+    font-family: 'Mplus 1p', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 36px;
+    color: #111B57;
 }
 
 p {
@@ -117,7 +127,7 @@ nav li a:hover {
     font-size: .95rem;
 }
 
-nav .active a {
+nav ul a.active {
     font-weight: bold;
     text-decoration: #FFB703 underline .2em;
     text-underline-offset: 5px;
@@ -182,6 +192,11 @@ nav li:where(:hover,
     font-weight: 700;
     font-size: 16px;
     margin-top: 50px;
+    transition: 100ms;
+}
+
+.view_more:hover {
+    background-color: #ffb803cd;
 }
 
 header {
